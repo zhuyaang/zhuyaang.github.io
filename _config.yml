@@ -1,26 +1,17 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+title: Yang Zhu
+description: Master Student in Marketing Management
+url: "https://zhuyaang.github.io"
+baseurl: ""
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+# 必填设置
+markdown: kramdown
+highlighter: rouge
+paginate: 5
 
-# Setup
-title:             Yang Zhu
-tagline:          'A Jekyll theme'
-description:      'Still constructing'
-url:              http://zhuyaang.github.io
-baseurl:          
+# 这一行很重要，告诉 GitHub 即使没有 Gemfile 也要尝试构建
+build_settings:
+  theme: jekyll-theme-primer
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
+# 插件设置（通常 Hyde 模板需要这个）
+plugins:
+  - jekyll-paginate
