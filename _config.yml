@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            Yang Zhu
 tagline:          'A Jekyll theme'
 description:      'Still constructing'
-url:              http://yangzhu.github.io
+url:              http://zhuyaang.github.io
 baseurl:          /
 
 author:
