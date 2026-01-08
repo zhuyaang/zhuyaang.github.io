@@ -248,9 +248,16 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
-/* 当屏幕宽度小于 768 像素（手机端）时执行 */
-@media (max-width: 48rem) {
+/* 确保头像在所有设备上都显示 */
+.sidebar-avatar {
+  display: block !important;
+  transition: all 0.3s ease; /* 增加一个平滑过渡效果 */
+}
+
+/* 专门针对手机端（屏幕宽度小于 30rem）的优化 */
+@media (max-width: 30rem) {
   .sidebar-avatar {
-    display: none !important;
+    width: 80px !important;   /* 手机端头像缩小到 80px */
+    margin-bottom: 10px !important; /* 缩减下方间距 */
   }
 }
