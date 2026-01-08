@@ -1,16 +1,15 @@
 ---
 layout: default
 ---
-<article class="post">
+
+<div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date" style="color: #999; font-size: 0.9rem;">
-    {{ page.date | date: "%B %-d, %Y" }}
-  </time>
+  <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
   
   <div class="post-content" style="margin-top: 30px; line-height: 1.8;">
     {{ content }}
   </div>
-</article>
+</div>
 
 <div class="related" style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
   <h2>Related Posts</h2>
@@ -20,7 +19,7 @@ layout: default
         <h3>
           <a href="{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+            <small>{{ post.date | date: "%Y-%m-%d" }}</small>
           </a>
         </h3>
       </li>

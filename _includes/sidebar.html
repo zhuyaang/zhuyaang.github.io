@@ -1,22 +1,25 @@
-<div class="sidebar-about" style="text-align: center;"> <img src="/avatar.jpg" class="sidebar-avatar" alt="Yang Zhu" style="display: block; margin: 0 auto 15px; border-radius: 50%; width: 140px; border: 2px solid rgba(255,255,255,0.1);">
+<div class="sidebar-about" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
   
-  <h1 style="margin-top: 0; font-size: 1.8rem; text-align: center;">
-    <a href="/">{{ site.title }}</a>
+  <img src="/avatar.jpg" class="sidebar-avatar" alt="Yang Zhu" 
+       style="display: block; margin: 0 auto 15px; border-radius: 50%; width: 140px; border: 2px solid rgba(255,255,255,0.1);">
+  
+  <h1 style="margin-top: 0; font-size: 1.8rem; width: 100%; text-align: center;">
+    <a href="/" style="text-decoration: none;">{{ site.title }}</a>
   </h1>
   
-  <p class="lead" style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 25px; text-align: center;">
+  <p class="lead" style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 25px; text-align: center; width: 100%;">
     {{ site.description }}
   </p>
 </div>
 
-<nav class="sidebar-nav" style="margin-top: 20px; text-align: left; padding-left: 20px;">
+<nav class="sidebar-nav" style="margin-top: 20px; text-align: left; padding-left: 25%;">
   <a class="sidebar-nav-item" href="/">Home</a>
   <a class="sidebar-nav-item" href="/cv">CV</a>
   <a class="sidebar-nav-item" href="/publications">Publications</a>
   <a class="sidebar-nav-item" href="/notes">Notes</a>
 </nav>
 
-<div class="sidebar-social" style="margin-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
+<div class="sidebar-social" style="margin-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; width: 100%;">
   <a href="https://www.linkedin.com/in/yaangzhu" target="_blank" style="text-decoration: none; margin: 0 10px; color: #fff;">
     <i class="fab fa-linkedin fa-lg"></i>
   </a>
@@ -30,5 +33,3 @@
     <i class="fas fa-envelope fa-lg"></i>
   </a>
 </div>
-
-<p style="font-size: 0.7rem; margin-top: 35px; opacity: 0.3; text-align: center;">&copy; {{ site.time | date: '%Y' }}</p>
