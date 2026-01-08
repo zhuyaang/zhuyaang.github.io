@@ -1,12 +1,10 @@
 ---
-layout: page
-title: PUBLICATIONS
+layout: default
+title: Publications
 ---
+
+# Publications
+（在这里写你的论文列表...）
 
 # Curriculum Vitae
 
-[Click here to download my CV (PDF)](/public/cv.pdf)
-
-### Education
-* **Master in Marketing Management**, SWUFE, 2024 - Present
-* **Bachelor in ...**, ... University, 2020 - 2024

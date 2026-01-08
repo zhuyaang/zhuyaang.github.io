@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: CV
 ---
+
 
 # Curriculum Vitae
 
