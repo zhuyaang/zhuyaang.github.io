@@ -265,3 +265,26 @@ a.sidebar-nav-item:focus {
   padding-right: 5%;
   padding-left: 5%;
 }
+/* 解决笔记页全屏及居中偏离问题 */
+@media (min-width: 48rem) {
+  /* 强制侧边栏固定在左边，不被内容撑开 */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 18rem;
+    display: block !important;
+  }
+  /* 强制正文在右边，不居中，不乱跑 */
+  .content {
+    margin-left: 20rem; /* 给侧边栏留出足够空间 */
+    max-width: 38rem;
+    text-align: left !important;
+  }
+}
+
+/* 即使在手机端，也要保证名字居中 */
+.sidebar-about h1 {
+  text-align: center !important;
+}
