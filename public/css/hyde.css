@@ -88,9 +88,11 @@ html {
 /* Sidebar nav (导航菜单) */
 .sidebar-nav {
   margin-bottom: 1rem;
+  text-align: center; /* 添加这行，将子元素居中 */
 }
 .sidebar-nav-item {
-  display: block;
+  display: inline-block; /* 将显示类型改为 inline-block */
+  padding: 0 10px; /* 添加一些左右内边距，使菜单项之间有间距 */
   line-height: 1.75;
 }
 a.sidebar-nav-item:hover,
