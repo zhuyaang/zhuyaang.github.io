@@ -288,3 +288,25 @@ a.sidebar-nav-item:focus {
 .sidebar-about h1 {
   text-align: center !important;
 }
+/* 1. 强制全站使用干净的 Sans-Serif 字体 */
+body, h1, h2, h3, h4, .sidebar-about h1 {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif !important;
+}
+
+/* 2. 修正侧边栏名字颜色，防止变紫 */
+.sidebar-about h1 a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+/* 3. 统一 Home, Notes, CV 的正文比例 */
+@media (min-width: 48rem) {
+  .content {
+    max-width: 42rem;      /* 增加正文宽度，防止太挤 */
+    margin-left: 20rem;    /* 侧边栏宽度预留 */
+    padding: 2rem 4rem;    /* 增加内边距，提升学术感 */
+  }
+  .sidebar {
+    width: 18rem;
+  }
+}
